@@ -1,3 +1,12 @@
+import { ImageLocal } from "./ImageLocal";
+import { ImageType } from "./ImageType";
+import { Sepia } from "./ImagenLocal";
+import { Particle } from "./particle";
+import { ParticleText } from "./particle";
+import { CanvasLocal } from "./canvasLocal";
+import { create } from "domain";
+
+
 export var canvas = <HTMLCanvasElement>document.getElementById("img1");
 var canvasR = <HTMLCanvasElement>document.getElementById("Result");
 var canvasO = <HTMLCanvasElement>document.getElementById("imgOrigin");
@@ -174,4 +183,19 @@ function image1Canvas(){
     if (fi) {
         reader.readAsDataURL(fi);
   }
+
+  /*[0][0][0][0][0][0][0][0][0] --------Opciones basicas------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+  document.getElementById("op1-1")!.addEventListener('click', convertirAGris, false);        
+  document.getElementById("op1-2")!.addEventListener('click', convertirANegativo, false);        
+  document.getElementById("op1-13")!.addEventListener('click', convertirANegativoGrises, false);
+  document.getElementById("op1-3")!.addEventListener('click', convertirARojo, false);
+  document.getElementById("op1-4")!.addEventListener('click', convertirAVerde, false);        
+  document.getElementById("op1-5")!.addEventListener('click', convertirAAzul, false);
+  document.getElementById("op1-6")!.addEventListener('click', convertirTricolor, false);
+  document.getElementById("op1-7")!.addEventListener('click', correccionGamma , false);
+  document.getElementById("op1-8")!.addEventListener('click', umbralizado, false);        
+  document.getElementById("op1-9")!.addEventListener('click', umbral2limites, false);        
+  document.getElementById("op1-10")!.addEventListener('click', desfaseX, false);        
+  document.getElementById("op1-11")!.addEventListener('click', desfaseY, false);        
+  document.getElementById("op1-12")!.addEventListener('click', desfaseD, false); 
 }
