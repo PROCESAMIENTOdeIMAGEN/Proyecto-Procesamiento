@@ -203,7 +203,7 @@ function image1Canvas(){
         document.getElementById("op8-1")!.addEventListener('click', generarPulso , false);
         document.getElementById("op8-2")!.addEventListener('click', generarRuido , false);
         document.getElementById("op8-3")!.addEventListener('click', generarRampaX , false);
-        document.getElementById("op8-4")!.addEventListener('click', generarRampaY , false);                
+        document.getElementById("op8-4")!.addEventListener('click', generarRampaY , false);                    
         }
     },false);
     if (fi) {
