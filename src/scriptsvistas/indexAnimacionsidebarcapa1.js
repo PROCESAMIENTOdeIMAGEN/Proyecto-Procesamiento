@@ -66,6 +66,34 @@ function muestra2(){
     document.getElementById("sub-menus9").classList.remove("despliceX")
     
     /*FIN SUB - MENUS*/
+    
+    /*SUBMENUS-ACTIONS*/
+        document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
    
    
 
@@ -112,6 +140,33 @@ function muestra1(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+        document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
   
     
 }
@@ -156,6 +211,33 @@ function muestra3(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+        document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
     
 
 
@@ -201,6 +283,34 @@ function muestra4(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+        document.getElementById("item-menu8").classList.remove("active")
+    document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
    
 
 
@@ -246,6 +356,33 @@ function muestra5(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+     document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
    
 
 }
@@ -290,6 +427,34 @@ function muestra6(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+       
+    document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
     
 
 }
@@ -334,6 +499,33 @@ function muestra7(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+       document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
     
 }
 document.getElementById("item-menu7").addEventListener("click",muestra8);
@@ -377,6 +569,33 @@ function muestra8(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    /*SUBMENUS-ACTIONS*/
+        document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
    
 }
 document.getElementById("item-menu8").addEventListener("click",muestra9);
@@ -420,5 +639,33 @@ function muestra9(){
     document.getElementById("sub-menus6").classList.remove("despliceX")
     document.getElementById("sub-menus9").classList.remove("despliceX")
      /*FIN SUB - MENUS*/
+    
+    /*SUBMENUS-ACTIONS*/
+      document.getElementById("sub-menusActions1").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions2").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions3").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions4").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions5").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions6").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions7").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions8").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions9").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions10").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions11").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions12").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions13").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions14").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions15").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions16").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions17").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions18").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions19").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions20").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions21").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActions22").style.transform = "translateX(-240px)"
+    document.getElementById("sub-menusActionsRP1").classList.remove("active")
+    document.getElementById("sub-menusActionsRP2").classList.remove("active")
+    document.getElementById("sub-menusActionsTR1").classList.remove("active");
+    /*FIN SUBMENUS-ACTIONS*/
 
 }
