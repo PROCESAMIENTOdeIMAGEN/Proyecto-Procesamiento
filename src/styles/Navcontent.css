@@ -1093,6 +1093,7 @@ margin-left: 5px;
         padding-top: .5rem;
     }
 
+
 }
 
 /* ========= Canvas Responsive ==============*/
@@ -1139,10 +1140,14 @@ margin-left: 5px;
     .item-canv1 {
         margin-left: 0;
     }
+   /*  .menu-canvas {
+        justify-content: center;
+        height: auto;
+    } */
     .menu-canvas {
         justify-content: center;
+        height: auto;
     }
-
     .sub-menusActions1{
         z-index: 50;
     }
