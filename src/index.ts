@@ -241,6 +241,10 @@ function image1Canvas(){
   }
 
 }
+function cambiosInputValor(e:any,id:string){
+    var input=document.getElementById(id)! as HTMLInputElement        
+    input.value=e.currentTarget.value
+}
 /*[0][0][0][0][0][0][0][0][0] --------Opciones basicas------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
 function convertirAGris(evt: any): void{
      var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());     
