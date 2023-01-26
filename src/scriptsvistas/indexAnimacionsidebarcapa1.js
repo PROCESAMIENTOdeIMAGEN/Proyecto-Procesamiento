@@ -681,3 +681,35 @@ function muestra9(){
 }
 
 /* ==============RESPONSIVE EVENT ================== */
+
+function responsive() {
+    document.querySelector('#sidemenu').classList.add('responsive');
+    
+    /* const active = document.querySelector('#fa-sharp');
+    if (active.classList.contains('activeTres')) {
+        document.querySelector('#sub-menu3').addEventListener('click', () => {
+
+        })
+    }
+    else {
+        active.classList.add('activeTres')
+        document.querySelector('#sub-menus3').style.height = '360px';
+    } */
+
+    document.querySelector('.activeTres').addEventListener('click', () => {
+        document.querySelector('#sub-menus3').style.height = '360px';
+        document.querySelector('#sub-menus3').style.transition =  '.8s';
+    })
+    document.querySelector('body').addEventListener('dblclick', () => {
+        document.querySelector('#sub-menus3').style.height = '80px';
+        document.querySelector('#sub-menus3').style.transition =  '.8s';
+    })
+
+   
+
+
+}
+responsive();
+
+
+
