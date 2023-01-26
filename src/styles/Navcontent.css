@@ -1090,3 +1090,54 @@ margin-left: 5px;
 }
 
 /* ========= Canvas Responsive ==============*/
+
+@media (max-width: 890px) {
+    /* display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90.4%; */
+
+    /*  
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 300px;
+        position: fixed;
+        z-index: 11;
+        width: 76.5%;
+        height: 40vh;
+        background-color: rgb(27, 29, 40);
+    }
+    */
+    .options-canvas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 65vh;
+    }
+
+    .canvac{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .item-canv1 {
+        margin-left: 0;
+    }
+    .menu-canvas {
+        justify-content: center;
+    }
+
+    .sub-menusActions1{
+        z-index: 50;
+    }
+}
