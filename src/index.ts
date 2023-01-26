@@ -197,6 +197,13 @@ function image1Canvas(){
                 /*[0][0][0][0][0][0][0][0][0] -------- Opciones Morofologicas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
         document.getElementById("op7-1")!.addEventListener('click', dilatarImg , false);        
         document.getElementById("op7-2")!.addEventListener('click', erosionarImg , false); 
+        document.getElementById("op7-3")!.addEventListener('click', aperturaImg , false);
+        document.getElementById("op7-4")!.addEventListener('click', cierreImg , false);
+        /*[0][0][0][0][0][0][0][0][0] -------- Opciones Sintéticas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+        document.getElementById("op8-1")!.addEventListener('click', generarPulso , false);
+        document.getElementById("op8-2")!.addEventListener('click', generarRuido , false);
+        document.getElementById("op8-3")!.addEventListener('click', generarRampaX , false);
+        document.getElementById("op8-4")!.addEventListener('click', generarRampaY , false);                
         }
     },false);
     if (fi) {
@@ -321,4 +328,32 @@ function dilatarImg(evt: any): void{
 function erosionarImg(evt: any): void{
   var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
   imagenSal.imageArray2DtoData(ctx, MathImg.erosionar(imagenSal, true));
+}
+
+function aperturaImg(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.apertura(imagenSal, true));
+}
+function cierreImg(evt: any): void{
+  console.log("cierre")
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.cierre(imagenSal, true));
+}
+/*[0][0][0][0][0][0][0][0][0] -------- Opciones Sintéticas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+function generarPulso(evt: any): void{
+  var imagenSal: ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  //imagenSal.imageArray2DtoData(ctx, MathImg.pulso(imgLocal.getImage().width, imgLocal.getImage().height));
+  imagenSal.imageArray2DtoData(ctx, MathImg.pulso(imagenSal));
+}
+function generarRuido(evt: any): void{
+  var imagenSal: ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.ruido(imagenSal.getWidth(), imagenSal.getHeight()));    
+}
+function generarRampaX(evt: any): void{
+  var imagenSal: ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.rampaX(imagenSal.getWidth(), imagenSal.getHeight()));
+}
+function generarRampaY(evt: any): void{
+  var imagenSal: ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.rampaY(imagenSal.getWidth(), imagenSal.getHeight()));
 }
