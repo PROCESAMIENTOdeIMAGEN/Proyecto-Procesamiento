@@ -939,16 +939,19 @@ margin-left: 5px;
 /* SUB MENUS Y SIDEMENU RESPONSIVE */
 .flex {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-
 @media (max-width: 890px) {
-    .flex {
+   /*  .flex {
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
         height: 100%;
-    }
+    } */
     .canvaI {
         height: 90%;
     }
