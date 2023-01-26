@@ -1,10 +1,9 @@
 import { ImageLocal } from "./ImageLocal";
 import { ImageType } from "./ImageType";
-import { Sepia } from "./ImagenLocal";
 import { Particle } from "./particle";
 import { ParticleText } from "./particle";
 import { CanvasLocal } from "./canvasLocal";
-import { create } from "domain";
+
 
 
 export var canvas = <HTMLCanvasElement>document.getElementById("img1");
@@ -177,6 +176,19 @@ function image1Canvas(){
         }  
         // canvas.addEventListener('mousemove', handleMouse);
         /*[0][0][0][0][0][0][0][0][0] --------Opciones basicas------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+               document.getElementById("op1-1")!.addEventListener('click', convertirAGris, false);        
+        document.getElementById("op1-2")!.addEventListener('click', convertirANegativo, false);        
+        document.getElementById("op1-13")!.addEventListener('click', convertirANegativoGrises, false);
+        document.getElementById("op1-3")!.addEventListener('click', convertirARojo, false);
+        document.getElementById("op1-4")!.addEventListener('click', convertirAVerde, false);        
+        document.getElementById("op1-5")!.addEventListener('click', convertirAAzul, false);
+        /*[0][0][0][0][0][0][0][0][0] -------- Opciones Edición ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+        document.getElementById("op2-5")!.addEventListener('click', ecualizado, false);               
+        /*[0][0][0][0][0][0][0][0][0] -------- Opciones Matematicas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+        document.getElementById("op3-2")!.addEventListener('click',sqrt , false);  
+         /*[0][0][0][0][0][0][0][0][0] -------- Opciones Nuevas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+         document.getElementById("op5-1")!.addEventListener('click', rain , false);        
+         document.getElementById("op5-2")!.addEventListener('click', rain2 , false);   
         
         }
     },false);
@@ -184,18 +196,93 @@ function image1Canvas(){
         reader.readAsDataURL(fi);
   }
 
-  /*[0][0][0][0][0][0][0][0][0] --------Opciones basicas------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
-  document.getElementById("op1-1")!.addEventListener('click', convertirAGris, false);        
-  document.getElementById("op1-2")!.addEventListener('click', convertirANegativo, false);        
-  document.getElementById("op1-13")!.addEventListener('click', convertirANegativoGrises, false);
-  document.getElementById("op1-3")!.addEventListener('click', convertirARojo, false);
-  document.getElementById("op1-4")!.addEventListener('click', convertirAVerde, false);        
-  document.getElementById("op1-5")!.addEventListener('click', convertirAAzul, false);
-  document.getElementById("op1-6")!.addEventListener('click', convertirTricolor, false);
-  document.getElementById("op1-7")!.addEventListener('click', correccionGamma , false);
-  document.getElementById("op1-8")!.addEventListener('click', umbralizado, false);        
-  document.getElementById("op1-9")!.addEventListener('click', umbral2limites, false);        
-  document.getElementById("op1-10")!.addEventListener('click', desfaseX, false);        
-  document.getElementById("op1-11")!.addEventListener('click', desfaseY, false);        
-  document.getElementById("op1-12")!.addEventListener('click', desfaseD, false); 
+}
+/*[0][0][0][0][0][0][0][0][0] --------Opciones basicas------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+function convertirAGris(evt: any): void{
+     var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());     
+    imagenSal.imageArray2DtoData(ctx, MathImg.toGray(imagenSal));   
+}
+function convertirANegativo(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.toNegative(imagenSal));    
+}
+function convertirANegativoGrises(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.toNegativeGrises(imagenSal));
+}
+function convertirARojo(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.toRed(imagenSal));
+}
+function convertirAVerde(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.toGreen(imagenSal));
+}
+function convertirAAzul(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.toBlue(imagenSal));
+}
+function ecualizado(evt: any): void{
+    var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoData(ctx, MathImg.ecualizar(imagenSal));
+} 
+/*[0][0][0][0][0][0][0][0][0] -------- Opciones Matemáticas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+
+function sqrt(evt: any): void{
+    var imagenSal:ImageType=new ImageType(ctxFic, imgLocal.getImage());
+    imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.toSqrt(imagenSal));
+}
+/*[0][0][0][0][0][0][0][0][0] -------- Opciones Nuevas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+//variables adicionales para el efecto rain
+//let ctx = ctx;
+let w:number;
+let h:number;
+const numberOfParticles = 1000;
+let particlesArray: Particle[];
+particlesArray = new Array(0);
+var imagenSal: ImageType;
+
+function init() {
+  //init
+  var imagenSal: ImageType = new ImageType(ctxFic, image);
+  let tmp = MathImg.relativeBrightness(imagenSal);
+  w = imagenSal.getWidth();
+  h = imagenSal.getHeight();
+  for (let i = 0; i < numberOfParticles; i++){
+    particlesArray.push(new Particle(w, h, ctx, tmp));
+  }
+}
+
+function animate() {
+  ctx.drawImage(image, 0, 0, w, h);
+  ctx.globalAlpha = 0.25;
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fillRect(0, 0, w, h);
+  for (let i = 0; i < particlesArray.length; i++){
+    particlesArray[i].update();
+    particlesArray[i].draw();
+  }
+  requestAnimationFrame(animate);
+}
+
+function animate2() {
+  ctx.globalAlpha = 0.25;
+  ctx.fillStyle = 'rgb(0,0,0)';
+  ctx.fillRect(0, 0, w, h);
+  for (let i = 0; i < particlesArray.length; i++){
+    particlesArray[i].update();
+    ctx.globalAlpha = particlesArray[i].getSpeed()*0.5;
+    particlesArray[i].draw();
+  }
+  requestAnimationFrame(animate2);
+}
+
+function rain(evt: any): void { 
+  init();
+  animate();
+}
+
+function rain2(evt: any): void { 
+  init();
+  animate2();
 }
