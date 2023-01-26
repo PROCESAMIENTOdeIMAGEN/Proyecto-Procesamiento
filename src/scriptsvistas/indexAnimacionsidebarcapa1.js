@@ -679,3 +679,5 @@ function muestra9(){
     document.getElementById("op3-3").classList.remove("expand")
     document.getElementById("op3-4").classList.remove("expand")
 }
+
+/* ==============RESPONSIVE EVENT ================== */

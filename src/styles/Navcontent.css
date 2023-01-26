@@ -925,3 +925,109 @@ margin-left: 5px;
 #Amber{
     color: #b9bfea;
 }
+
+/* ================RESPONSIVE============= */
+
+/* SUB MENUS Y SIDEMENU RESPONSIVE */
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.canvaI {
+    height: 90%;
+}
+
+.inactiveSd {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    margin: 1rem 0 !important; 
+}
+@media (max-width: 890px) {
+    .sidemenu.responsive {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        bottom: 0;
+        padding: .5rem 0;
+        transition: .8s;
+        margin-top: 0;
+        padding: 1rem 0;
+    }
+    
+    .texto {
+        display: none;
+    }
+    .item-menu i{
+       margin: 0; 
+
+    }
+
+    .item-menu  {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sub-menus {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        padding: 1rem 0;
+        bottom: 40px;
+        overflow-x: auto;
+        gap: .5rem;
+        z-index: 50;
+        margin: 0;
+    }
+
+    .op1-1 {
+        font-size: .6rem;
+        text-align: center;
+        padding: 0 6rem;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-menusActions1 {
+        left: -60px;
+    }
+
+    .sub-menus .inative {
+        width: 100%;
+    }
+
+    .op1-trap {
+        margin-left: 100px;
+        margin-top: 0;
+        height: 10px;
+    }
+
+
+    .sub-sub p {
+       padding: 1rem 5rem;
+
+    }
+
+    .sub-sub p{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .op1-trap1,.op1-trap2,.op1-trap3, .op1-trap4{
+        margin: 0 85px 0 0;
+    }
+
+}
+
+
+
+
+/* =========MENU-TOP RESPONSIVE==============*/
