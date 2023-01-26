@@ -456,11 +456,19 @@ input[type="file"]{
     visibility: hidden;
     
 }
+#histograma1{
+    background-color: #b7c0c9;
+    margin-top: 50px;
+}
+#histograma2{
+    background-color: #b7c0c9;
+    margin-top: 50px;
+}
 .canvaH{
     visibility: hidden;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 150px;
     width: 100%;
     height: 100%;
     overflow: auto;
