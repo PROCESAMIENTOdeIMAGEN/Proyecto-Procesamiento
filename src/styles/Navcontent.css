@@ -937,6 +937,9 @@ margin-left: 5px;
 /* ================RESPONSIVE============= */
 
 /* SUB MENUS Y SIDEMENU RESPONSIVE */
+.flex {
+    display: flex;
+}
 
 @media (max-width: 890px) {
     .flex {
