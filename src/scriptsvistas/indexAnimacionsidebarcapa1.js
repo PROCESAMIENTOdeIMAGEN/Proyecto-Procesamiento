@@ -95,7 +95,8 @@ function muestra2(){
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
    
-   
+   document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 
     
 }
@@ -167,7 +168,8 @@ function muestra1(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-  
+  document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
     
 }
 document.getElementById("item-menu2").addEventListener("click",muestra3);
@@ -238,7 +240,8 @@ function muestra3(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-    
+    document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 
 
 }
@@ -312,7 +315,8 @@ function muestra4(){
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
    
-
+    document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 
 }
 document.getElementById("item-menu4").addEventListener("click",muestra5);
@@ -383,7 +387,8 @@ function muestra5(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-   
+   document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 
 }
 document.getElementById("item-menu5").addEventListener("click",muestra6);
@@ -455,7 +460,8 @@ function muestra6(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-    
+    document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 
 }
 document.getElementById("item-menu6").addEventListener("click",muestra7);
@@ -526,6 +532,8 @@ function muestra7(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
+    document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
     
 }
 document.getElementById("item-menu7").addEventListener("click",muestra8);
@@ -596,7 +604,8 @@ function muestra8(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-   
+   document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 }
 document.getElementById("item-menu8").addEventListener("click",muestra9);
 function muestra9(){
@@ -667,5 +676,6 @@ function muestra9(){
     document.getElementById("sub-menusActionsRP2").classList.remove("active")
     document.getElementById("sub-menusActionsTR1").classList.remove("active");
     /*FIN SUBMENUS-ACTIONS*/
-
+    document.getElementById("op3-3").classList.remove("expand")
+    document.getElementById("op3-4").classList.remove("expand")
 }
