@@ -182,14 +182,21 @@ function image1Canvas(){
         document.getElementById("op1-3")!.addEventListener('click', convertirARojo, false);
         document.getElementById("op1-4")!.addEventListener('click', convertirAVerde, false);        
         document.getElementById("op1-5")!.addEventListener('click', convertirAAzul, false);
+         document.getElementById("op1-6")!.addEventListener('click', convertirTricolor, false);
         /*[0][0][0][0][0][0][0][0][0] -------- Opciones Edición ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
         document.getElementById("op2-5")!.addEventListener('click', ecualizado, false);               
         /*[0][0][0][0][0][0][0][0][0] -------- Opciones Matematicas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
         document.getElementById("op3-2")!.addEventListener('click',sqrt , false);  
+                 /* Trigonometricas */
+        document.getElementById("cos")!.addEventListener('click', coseno , false);        
+        document.getElementById("sin")!.addEventListener('click', funcionSine , false);        
+        document.getElementById("tan")!.addEventListener('click', tan , false);
          /*[0][0][0][0][0][0][0][0][0] -------- Opciones Nuevas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
          document.getElementById("op5-1")!.addEventListener('click', rain , false);        
          document.getElementById("op5-2")!.addEventListener('click', rain2 , false);   
-        
+                /*[0][0][0][0][0][0][0][0][0] -------- Opciones Morofologicas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+        document.getElementById("op7-1")!.addEventListener('click', dilatarImg , false);        
+        document.getElementById("op7-2")!.addEventListener('click', erosionarImg , false); 
         }
     },false);
     if (fi) {
@@ -221,7 +228,14 @@ function convertirAVerde(evt: any): void{
 function convertirAAzul(evt: any): void{
     var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
     imagenSal.imageArray2DtoData(ctx, MathImg.toBlue(imagenSal));
+ 
 }
+function convertirTricolor(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.toTricolor(imagenSal));
+  
+}
+/*[0][0][0][0][0][0][0][0][0] -------- Opciones Edición ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
 function ecualizado(evt: any): void{
     var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
     imagenSal.imageArray2DtoData(ctx, MathImg.ecualizar(imagenSal));
@@ -232,6 +246,19 @@ function sqrt(evt: any): void{
     var imagenSal:ImageType=new ImageType(ctxFic, imgLocal.getImage());
     imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.toSqrt(imagenSal));
 }
+/* Trigonometricas */
+function coseno(evt: any): void{
+  var imagenSal:ImageType=new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.toCos(imagenSal));
+}
+function funcionSine(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.toSine(imagenSal));
+}
+function tan(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoDataWithResizing(ctx, MathImg.toTan(imagenSal));
+} 
 /*[0][0][0][0][0][0][0][0][0] -------- Opciones Nuevas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
 //variables adicionales para el efecto rain
 //let ctx = ctx;
@@ -285,4 +312,13 @@ function rain(evt: any): void {
 function rain2(evt: any): void { 
   init();
   animate2();
+}
+/*[0][0][0][0][0][0][0][0][0] -------- Opciones Morfológicas ------[0][0][0][0][0][0][0][0][0][0][0][0][0]*/
+function dilatarImg(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.dilatar(imagenSal, true));
+} 
+function erosionarImg(evt: any): void{
+  var imagenSal:ImageType = new ImageType(ctxFic, imgLocal.getImage());
+  imagenSal.imageArray2DtoData(ctx, MathImg.erosionar(imagenSal, true));
 }
