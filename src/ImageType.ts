@@ -1,4 +1,4 @@
-
+import { TamCanvasHeight,TamCanvasWidth,NumnewCanWidth,NumnewCanHeight } from ".";
 export class ImageType {
   arrImage!: number[][][];
   imageData: ImageData;
@@ -12,8 +12,8 @@ export class ImageType {
   */
   constructor(sc: CanvasRenderingContext2D, img?: HTMLImageElement,  w?:number, h?:number, data?: boolean) {
     if (img) {
-      this._width = img.width;
-      this._height = img.height;
+       this._width = NumnewCanWidth;
+      this._height = NumnewCanHeight;
       
       this.imageData = sc.getImageData(0, 0, this._width, this._height);
       console.log("con",this.imageData)
